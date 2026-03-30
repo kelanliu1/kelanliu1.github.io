@@ -58,6 +58,22 @@ const socials = [
 
 const experiences = [
   {
+    title: "Software Engineer",
+    company_name: "ClassLink",
+    icon: work,
+    iconBg: "#383E56",
+    date: "Jan 2024 – Present",
+    points: [
+      "Architected and implemented a serverless translation management system supporting localization across multiple product front ends; delivered a department-wide presentation on problem context, architecture, and system design (Python, TypeScript, AWS Lambda, S3)",
+      "Collaborated cross-functionally with the Authentication team to deliver features for Microsoft Entra and Google Directory integrations, contributing directly to adjacent team codebases",
+      "Wrote performant Python code running on AWS Lambda to support internal pull-request pipelines and event-driven automation workflows",
+      "Optimized critical SQL queries, reducing database query costs by up to 68% (MySQL, Redis)",
+      "Maintained and developed backend APIs for existing and new products using Node.js and TypeScript, deployed on Amazon ECS",
+      "Built a resilient request library with retry logic and exponential backoff, reducing socket hangups and server-side errors",
+      "Identified and patched a privilege-escalation vulnerability caused by misconfigured AWS SES IAM permissions",
+    ],
+  },
+  {
     title: "Software Engineer Intern",
     company_name: "Intuidex",
     icon: intuidex,
