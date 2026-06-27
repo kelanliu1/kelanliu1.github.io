@@ -12,6 +12,13 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'Creative Coffee Club',
+    description:
+      'Built and shipped a social platform for ~850 active creatives with Stripe subscriptions and A/B tested price points, plus an automated Twilio SMS pipeline handling availability polling, group introductions, reminders, and delivery tracking. Developed a scoring-based matching algorithm with city/slot segmentation and preference weighting, plus a full admin suite with dry run previews, manual overrides, CSV exports, and real-time SMS logs. Integrated PostHog analytics and experiment tracking, SendGrid drip campaigns, Supabase auth with magic links, and 7 automated cron jobs on Vercel powering the end-to-end biweekly matching cycle.',
+    tech: ['Next.js', 'React', 'Supabase', 'Stripe', 'Twilio', 'Telnyx', 'SendGrid', 'PostHog', 'Vercel'],
+    link: 'https://app.creativecoffee.club/museum',
+  },
+  {
     title: 'GramIt',
     description:
       'Online multiplayer game combining social interaction and creative image selection. Built with AWS Step Functions for real-time game state management and XState for frontend state machines.',
@@ -70,7 +77,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--color-fg)')}
             onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--muted)')}
           >
-            GitHub →
+            {project.link?.includes('github') ? 'GitHub' : 'View'} →
           </a>
         )}
       </div>
