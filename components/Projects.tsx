@@ -14,7 +14,7 @@ const projects: Project[] = [
   {
     title: 'Creative Coffee Club',
     description:
-      'Built and shipped a social platform for ~850 active creatives with Stripe subscriptions and A/B tested price points, plus an automated Twilio SMS pipeline handling availability polling, group introductions, reminders, and delivery tracking. Developed a scoring-based matching algorithm with city/slot segmentation and preference weighting, plus a full admin suite with dry run previews, manual overrides, CSV exports, and real-time SMS logs. Integrated PostHog analytics and experiment tracking, SendGrid drip campaigns, Supabase auth with magic links, and 7 automated cron jobs on Vercel powering the end-to-end biweekly matching cycle.',
+      'Social platform for ~850 active creatives with Stripe subscriptions, A/B tested pricing, and an automated SMS pipeline for availability polling, introductions, and reminders. Features a scoring-based matching algorithm with city/slot segmentation, a full admin suite, and 7 automated cron jobs powering the biweekly matching cycle.',
     tech: ['Next.js', 'React', 'Supabase', 'Stripe', 'Twilio', 'Telnyx', 'SendGrid', 'PostHog', 'Vercel'],
     link: 'https://app.creativecoffee.club/museum',
   },
